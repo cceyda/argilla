@@ -22,7 +22,7 @@
         <img :src="metadata._image_url" alt="image of the record" />
       </div>
       <div v-if="record.metadata.link" >
-        <a :href="record.metadata.link">Link</a>
+        <a :href="record.metadata.link">{{record.metadata.link_text}}</a>
       </div>
       <div class="origins">
         <text-spans-static
