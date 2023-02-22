@@ -302,8 +302,12 @@ export default {
   }
 }
 .meta_image{
-  width: 300px;
+  width: auto;
   height: 300px;
+}
+.meta_image img{
+  max-height:100%;
+  width:auto;
 }
 
 .content {
