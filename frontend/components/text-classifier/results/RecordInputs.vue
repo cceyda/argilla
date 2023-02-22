@@ -31,6 +31,7 @@
           />
           <lazy-record-string v-else :record="record" :text="text" />
         </span>
+        <div v-if="record.metadata.image_path" :style="{ backgroundImage: `url(${record.metadata.image_path})`, width: `300px`, height: `300px` }"></div>
       </span>
     </div>
     <base-button

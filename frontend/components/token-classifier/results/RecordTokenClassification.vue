@@ -21,6 +21,9 @@
       <div class="record--image-area" v-if="isRecordContainsImage">
         <img :src="metadata._image_url" alt="image of the record" />
       </div>
+      <div v-if="record.metadata.link" >
+        <a :href="record.metadata.link">Link</a>
+      </div>
       <div class="origins">
         <text-spans-static
           v-if="record.prediction"
@@ -297,6 +300,10 @@ export default {
   .list__item--selectable & {
     padding-left: $base-space * 7;
   }
+}
+.meta_image{
+  width: 300px;
+  height: 300px;
 }
 
 .content {
